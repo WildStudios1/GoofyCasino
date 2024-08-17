@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goofy Ahh Casino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info">
+        <h1>Goofy Ahh Casino</h1>
+        <p>Your Coins: <span id="coins">200</span></p>
+        <button onclick="playRoulette()">Play Backshot Roulette (Cost: 10 coins)</button>
+        <button onclick="playSlots()">Play Quandale Slots (Cost: 5 coins)</button>
+        <p id="result"></p>
+    </div>
+    <div id="game-container"></div>
+
+    <!-- Audio files -->
+    <audio id="roulette-sound" src="assets/sounds/roulette-spin.mp3"></audio>
+    <audio id="slots-sound" src="assets/sounds/slot-spin.mp3"></audio>
+    <audio id="win-sound" src="assets/sounds/win-sound.mp3"></audio>
+    <audio id="lose-sound" src="assets/sounds/lose-sound.mp3"></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
